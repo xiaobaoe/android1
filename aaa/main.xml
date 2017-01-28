@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="20dp"
+	    android:orientation="vertical" >
+    
+	    <LinearLayout 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:layout_weight="7"
+	    	android:orientation="vertical" >    
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:layout_weight="9"
+	    	android:orientation="vertical" >
+	    	
+	        <LinearLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="0dp"
+	    		android:layout_weight="4"
+	    		android:orientation="vertical" >
+	    		
+	            <TextView
+		        	android:id="@+id/day"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:textSize="60sp"
+		        	android:text="08" />
+		    	<TextView
+		        	android:id="@+id/month"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginTop="-15dp"
+		        	android:textSize="30sp"
+		        	android:text="JAN.SUNDAY" />
+	    
+	    	</LinearLayout>
+	        <LinearLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="0dp"
+	    		android:layout_weight="2"
+	    		android:orientation="vertical" >    
+	    	</LinearLayout>        
+	        <LinearLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="0dp"
+	    		android:layout_weight="3"
+	    		android:orientation="vertical" >
+		    	<TextView
+		        	android:id="@+id/sentence"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:textSize="18sp"
+		        	android:text="给你一点甜甜，让你今夜都好眠" />
+		    	
+		    	<LinearLayout 
+			    	android:layout_width="match_parent"
+			    	android:layout_height="match_parent"
+			    	android:orientation="horizontal" >
+			    	
+			        <Button
+			            android:id="@+id/btn_music"
+			            android:layout_width="23dp"
+			            android:layout_height="23dp"
+			            android:layout_marginTop="9dp"
+			            android:background="@drawable/music" />
+			        <TextView
+			        	android:id="@+id/music_name"
+			        	android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:layout_marginLeft="20dp"
+			        	android:layout_marginTop="9dp"
+			        	android:textSize="18sp"
+			        	android:text="宝贝" />
+			        <TextView
+			        	android:id="@+id/lianjiefu"
+			        	android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:layout_marginLeft="10dp"
+			        	android:layout_marginTop="9dp"
+			        	android:textSize="18sp"
+			        	android:text="——" />
+			        <TextView
+			        	android:id="@+id/singer"
+			        	android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:layout_marginLeft="10dp"
+			        	android:layout_marginTop="9dp"
+			        	android:textSize="18sp"
+			        	android:text="张悬" />	    
+			    </LinearLayout>
+	    
+	    	</LinearLayout>
+	    	    
+	    </LinearLayout>
+	</LinearLayout>        
+</LinearLayout>

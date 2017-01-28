@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+	    
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" >
+	        
+	        <TextView
+		    	android:id="@+id/set_set"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerInParent="true"
+		    	android:textSize="28sp"
+		    	android:text="设置" />
+	        
+	        <TextView
+		    	android:id="@+id/set_space"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentRight="true"
+	            android:layout_alignTop="@id/set_set"
+		    	android:textSize="15sp" />
+
+	        <Button
+	            android:id="@+id/btn_set_return"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+
+	            android:layout_alignTop="@id/set_set"
+	            android:layout_toLeftOf="@id/set_space"
+	            android:background="@drawable/cha" />
+	        
+	        
+	    </RelativeLayout> 	        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="4"
+	    android:orientation="vertical" >    
+	    
+	        <TextView
+		    	android:id="@+id/suoping1"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="15dp"
+		    	android:textSize="28sp"
+		    	android:text="设为锁屏" />
+	        
+	        <LinearLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:orientation="horizontal" >
+	    		<TextView
+		    		android:id="@+id/suoping2"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="15dp"
+		    	
+		    		android:textSize="20sp"
+		    		android:text="每日为您更新当日壁纸" />
+	    	
+	    		<com.example.move.MyToggle  
+        			android:id="@+id/toggle"  
+        			android:layout_width="wrap_content"  
+        			android:layout_height="wrap_content"  
+        			android:layout_gravity="right" />  
+        	</LinearLayout>	    
+	    
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="6"
+	    android:orientation="vertical" >  
+	    <TextView
+		    android:id="@+id/huancun1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15dp"
+		    android:textSize="28sp"
+		    android:text="缓存" /> 
+		<LinearLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:orientation="horizontal" >    
+			<TextView
+		    	android:id="@+id/huancun2"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="15dp"
+			    android:textSize="20sp"
+			    android:text="缓存容量" />
+			<TextView
+		    	android:id="@+id/huancun3"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="15dp"
+			    android:textSize="20sp"
+			    android:text="20.17M" />
+		</LinearLayout>
+		
+		    <Button
+	            android:id="@+id/btn_set_huancun"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"	                        
+	            android:text="清空缓存" />
+	          
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3"
+	    android:orientation="horizontal" > 
+	    <TextView
+		    android:id="@+id/set_about"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:textSize="28sp"
+			android:text="关于" />   
+		<TextView
+		    android:id="@+id/set_about2"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:textSize="20sp"
+			android:text="by木屋" /> 
+	</LinearLayout>
+
+</LinearLayout>
